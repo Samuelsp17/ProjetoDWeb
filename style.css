@@ -1,0 +1,177 @@
+body {
+    font-family: Lucida, Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .logo-conteiner{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+  }
+  .logo{
+width: 80px;
+height: auto;
+  }
+
+
+  /* Estilo do header */
+header {
+  background-image: url('imagem-de-fundo.jpg'); /* Imagem de fundo do header */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Header com imagem de fundo ajustada */
+.header-banner {
+  background-image: url('/imagens/headerlogo2.png'); /* Substitua pelo caminho da sua imagem */
+  background-size: cover; /* Garante que a imagem preencha a área definida */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição */
+  width: 100%; /* Ocupa toda a largura do site */
+  height: 470px; /* Ajusta a altura conforme necessário */
+  box-sizing: border-box;
+}
+
+/* Responsividade opcional */
+@media (max-width: 768px) {
+  .header-banner {
+      height: 100px; /* Reduz ainda mais a altura em telas menores */
+      background-size: contain; /* Mantém a imagem visível sem corte */
+  }
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 2s;
+  transform: translateX(100%);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transition: all 2s;
+  transform: translateX(0);
+}
+
+/* Texto de Bem Vindo */
+h1.textwelcome {
+  font-family: Impact, Charcoal, sans-serif; /* Fonte principal Impact, com fontes de fallback */
+  font-size: 4em; /* Ajuste o tamanho conforme necessário */
+  color: #333; /* Cor do texto */
+  margin: 0; /* Remova ou ajuste a margem */
+  text-align: center; /* Alinhamento central, caso deseje */
+  color: #87cefa;
+  text-shadow: 
+        -2px -2px 0 #000,  /* sombra no canto superior esquerdo */
+         2px -2px 0 #000,  /* sombra no canto superior direito */
+        -2px  2px 0 #000,  /* sombra no canto inferior esquerdo */
+         2px  2px 0 #000;  /* sombra no canto inferior direito */
+}
+
+.textoparaesquerda {
+  margin-left: 50px; /* Move o texto 5px para a direita */
+}
+
+/*imagem da seta na metade da tela */
+.imagemseta {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 10%; /* Ocupa toda a altura da tela */
+}
+
+.imagemseta img {
+  max-width: 15%; /* Ajusta o tamanho da imagem */
+}
+
+.imagemaqui {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 750px;
+}
+
+.imagemsobre {
+  display: flex;
+  justify-content: left;
+  height: 350px;
+}
+
+.criamos {
+  font-family: impact;
+  font-size: 2.5em;
+  color: #87cefa;
+  margin: 0;
+  text-shadow: 
+  -2px -2px 0 #000,  /* sombra no canto superior esquerdo */
+   2px -2px 0 #000,  /* sombra no canto superior direito */
+  -2px  2px 0 #000,  /* sombra no canto inferior esquerdo */
+   2px  2px 0 #000;  /* sombra no canto inferior direito */
+}
+
+.encontrara {
+  display: flex;
+  justify-content: left;
+  height: 350px;
+}
+
+
+/*texto da explicação */
+h3 {
+  font-family: Lucida;
+  font-size: 35px;
+
+}
+
+/*parter do body */
+  main {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  button {
+    background-color: #87cefa;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+    transform: translateY(-10px);
+  }
+  
+  footer {
+    background-color: #87cefa;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  

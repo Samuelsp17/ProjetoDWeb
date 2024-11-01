@@ -6,6 +6,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    
+    
   }
   .logo-conteiner{
     position: absolute;
@@ -60,7 +62,7 @@ header {
   opacity: 0;
   filter: blur(5px);
   transition: all 2s;
-  transform: translateX(100%);
+  transform: translateX(-100%);
 }
 
 .show {
@@ -68,6 +70,7 @@ header {
   filter: blur(0);
   transition: all 2s;
   transform: translateX(0);
+  max-width: 100vw; /* Limita a largura ao tamanho da viewport */
 }
 
 /* Texto de Bem Vindo */
@@ -101,12 +104,38 @@ h1.textwelcome {
   max-width: 15%; /* Ajusta o tamanho da imagem */
 }
 
-.imagemaqui {
-display: flex;
-justify-content: center;
-align-items: center;
-height: 750px;
+
+/*conteiner escondido */
+.box {
+  font-size: 25px;
+  width: 1700px;
+  border: 2px solid #333;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+
+.box:hover {
+  background-color: #87cefa;
+}
+
+.box-header {
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+  margin-right: 10px;
+}
+
+.box-message {
+  margin-top: 10px;
+  display: none;
+}
+
+/*temino dos conteiners escondidas*/
+
 
 .imagemsobre {
   display: flex;
@@ -116,7 +145,7 @@ height: 750px;
 
 .criamos {
   font-family: impact;
-  font-size: 2.5em;
+  font-size: 2em;
   color: #87cefa;
   margin: 0;
   text-shadow: 
@@ -146,27 +175,7 @@ h3 {
     padding: 20px;
   }
   
-  .buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-  }
-  
-  button {
-    background-color: #87cefa;
-    color: white;
-    padding: 15px 25px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-    transform: translateY(-10px);
-  }
+
   
   footer {
     background-color: #87cefa;

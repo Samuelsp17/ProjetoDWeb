@@ -108,7 +108,7 @@ h1.textwelcome {
 /*conteiner escondido */
 .box {
   font-size: 25px;
-  width: 1700px;
+  width: 2400px;
   border: 2px solid #333;
   padding: 10px;
   cursor: pointer;
@@ -161,6 +161,16 @@ h1.textwelcome {
   height: 350px;
 }
 
+h1.texttopic {
+  color: #87cefa;
+  font-size: 3em;
+  font-family: Impact;
+  text-shadow: 
+  -2px -2px 0 #000,  /* sombra no canto superior esquerdo */
+   2px -2px 0 #000,  /* sombra no canto superior direito */
+  -2px  2px 0 #000,  /* sombra no canto inferior esquerdo */
+   2px  2px 0 #000;  /* sombra no canto inferior direito */
+}
 
 /*texto da explicação */
 h3 {

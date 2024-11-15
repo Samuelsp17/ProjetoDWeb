@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,29 +19,28 @@ header {
 
 header h1 {
     font-family: impact;
-    font-size: 2.5em;
-    color: #87cefa;
-    margin: 0;
-    text-shadow: 
-    -2px -2px 0 #000,  /* sombra no canto superior esquerdo */
-     2px -2px 0 #000,  /* sombra no canto superior direito */
-    -2px  2px 0 #000,  /* sombra no canto inferior esquerdo */
-     2px  2px 0 #000;  /* sombra no canto inferior direito */
+  font-size: 2.5em;
+  color: #87cefa;
+  margin: 0;
+  text-shadow: 
+  -2px -2px 0 #000,  /* sombra no canto superior esquerdo */
+   2px -2px 0 #000,  /* sombra no canto superior direito */
+  -2px  2px 0 #000,  /* sombra no canto inferior esquerdo */
+   2px  2px 0 #000;  /* sombra no canto inferior direito */
 }
 
 .intro {
     font-size: 1.1em;
     color: #555;
     margin-top: 10px;
-    text-align: center;
 }
 
 main {
     max-width: 800px;
-    margin: 20px auto;
+    margin: 0 auto;
     background: #fff;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
@@ -50,23 +49,24 @@ section {
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     color: #444;
     margin-bottom: 10px;
     border-bottom: 2px solid #87cefa;
     padding-bottom: 5px;
 }
 
-p {
-    margin: 10px 0;
-    color: #555;
-    text-align: justify;
-}
 footer h3 {
     font-size: 1.3em;
     color: #333;
     margin-bottom: 10px;
 }
+
+p {
+    margin: 10px 0;
+    color: #666;
+}
+
 .copy {
     background-color: #87cefa;
     color: white;
@@ -80,5 +80,5 @@ footer h3 {
     display: flex;
     justify-content: center; /* Centraliza o conteúdo dentro do flexbox */
     align-items: center; /* Centraliza verticalmente */
-    
-}
+  }
+  

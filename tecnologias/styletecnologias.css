@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,10 +6,10 @@
 }
 
 body {
-    background-color: #f7f7f7;
+    background-color: #fff;
     color: #333;
     line-height: 1.6;
-    padding: 20px;
+    padding: 0;
 }
 
 header {
@@ -18,8 +18,15 @@ header {
 }
 
 header h1 {
-    font-size: 2em;
-    color: #333;
+    font-family: impact;
+  font-size: 2.5em;
+  color: #87cefa;
+  margin: 0;
+  text-shadow: 
+  -2px -2px 0 #000,  /* sombra no canto superior esquerdo */
+   2px -2px 0 #000,  /* sombra no canto superior direito */
+  -2px  2px 0 #000,  /* sombra no canto inferior esquerdo */
+   2px  2px 0 #000;  /* sombra no canto inferior direito */
 }
 
 .intro {
@@ -45,6 +52,8 @@ h2 {
     font-size: 1.4em;
     color: #444;
     margin-bottom: 10px;
+    border-bottom: 2px solid #87cefa;
+    padding-bottom: 5px;
 }
 
 footer h3 {
@@ -58,7 +67,18 @@ p {
     color: #666;
 }
 
-footer {
-    border-top: 1px solid #ddd;
-    padding-top: 15px;
-}
+.copy {
+    background-color: #87cefa;
+    color: white;
+    text-align: center; /* Garante a centralização horizontal */
+    padding: 10px 0; /* Espaçamento interno */
+    margin-top: 20px;
+    position: relative;
+    width: 100%; /* Ocupa toda a largura */
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo dentro do flexbox */
+    align-items: center; /* Centraliza verticalmente */
+  }
+  

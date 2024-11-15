@@ -108,7 +108,7 @@ h1.textwelcome {
 /*conteiner escondido */
 .box {
   font-size: 25px;
-  width: 2400px;
+  width: 1800px;
   border: 2px solid #333;
   padding: 10px;
   cursor: pointer;
@@ -130,7 +130,7 @@ h1.textwelcome {
 }
 
 .box-message {
-  margin-top: 10px;
+  margin-top: 20px;
   display: none;
 }
 
@@ -153,6 +153,12 @@ h1.textwelcome {
    2px -2px 0 #000,  /* sombra no canto superior direito */
   -2px  2px 0 #000,  /* sombra no canto inferior esquerdo */
    2px  2px 0 #000;  /* sombra no canto inferior direito */
+}
+
+.espaçodedicado {
+  display: flex;
+  justify-content: left;
+  height: 480px;
 }
 
 .encontrara {

@@ -52,6 +52,8 @@ h2 {
     font-size: 1.4em;
     color: #444;
     margin-bottom: 10px;
+    border-bottom: 2px solid #87cefa;
+    padding-bottom: 5px;
 }
 
 footer h3 {
@@ -68,9 +70,15 @@ p {
 .copy {
     background-color: #87cefa;
     color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin: 0;
-    width: 100%;
+    text-align: center; /* Garante a centralização horizontal */
+    padding: 10px 0; /* Espaçamento interno */
+    margin-top: 20px;
+    position: relative;
+    width: 100%; /* Ocupa toda a largura */
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo dentro do flexbox */
+    align-items: center; /* Centraliza verticalmente */
   }
   
